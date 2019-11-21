@@ -1,0 +1,30 @@
+[assignment]
+points = 100
+allowed_suffixes = [".zip", ".pdf"]
+file_limit = 1
+content_filetypes = [".pdf", ".java", ".txt", "", ".py"]
+template = """{full_name}
+======================================================
+
+Punkte: ?/{max}
+
+1. Index
+	* 
+2. Zeilen vs. Strophen
+	* 
+3. d-gap
+	* 
+
+
+Anmerkungen:
+{notes}
+
+
+"""
+
+[assignment.warnings]
+class = "Kompilierte .class Datei mit abgegeben: {name}"
+docx = "Proprietäres Office Dokument abgegeben: {name}"
+xlsx = "Proprietäres Office Dokument abgegeben: {name}"
+odt = "Office Dokument abgegeben (immerhin ein freies Format): {name}"
+ods = "Office Dokument abgegeben (immerhin ein freies Format): {name}"

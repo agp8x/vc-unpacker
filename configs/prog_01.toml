@@ -1,0 +1,31 @@
+[assignment]
+points = 30
+allowed_suffixes = [".zip"]
+file_limit = 1
+content_filetypes = [".pdf", ".java", ".txt", ""]
+template = """{full_name}
+======================================================
+
+1. Quotes: /10P
+	* 
+2. MyStrings: /10P
+	* 
+3. Film: /10P
+	* 
+4. BinSearch: /10P
+	* 
+
+Gesamtpunkte: ?/{max}
+
+
+Anmerkungen:
+{notes}
+
+
+"""
+
+[assignment.warnings]
+class = "Kompilierte .class Datei mit abgegeben: {name}"
+docx = "Proprietäres Office Dokument abgegeben: {name}"
+xlsx = "Proprietäres Office Dokument abgegeben: {name}"
+odt = "Office Dokument abgegeben (immerhin ein freies Format): {name}"
